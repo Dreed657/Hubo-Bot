@@ -1,0 +1,25 @@
+{
+  "name": "hubo-bot",
+  "version": "1.0.0",
+  "description": "aaaaaa",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "powerdev": "supervisor index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "S. Lazarov",
+  "license": "MIT",
+  "dependencies": {
+    "discord": "^0.8.2",
+    "discord.js": "^11.5.1",
+    "dotenv-flow": "^3.0.0",
+    "enmap": "^5.0.1",
+    "fs": "0.0.1-security",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^1.19.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0"
+  }
+}

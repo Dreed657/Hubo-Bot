@@ -4,8 +4,8 @@
   "description": "aaaaaa",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "powerdev": "supervisor index.js",
+    "dev": "nodemon bot.js",
+    "powerdev": "supervisor bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "S. Lazarov",

@@ -14,7 +14,6 @@ exports.run = async (client, message, args) => {
     const embed = new RichEmbed()
         .setTitle('Avaiilable Roles')
         .setDescription(`
-        
         🇦 ${a.toString()}
         🇧 ${b.toString()}
         🇨 ${c.toString()}

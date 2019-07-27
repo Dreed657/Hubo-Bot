@@ -26,14 +26,14 @@ exports.run = async (client, message, args) => {
                             .setFooter(`A random data!!`)
                             .setTimestamp();
 
-                            cryptoChannel.send(embed).then(msg => { msg.delete(59500) });
+                            cryptoChannel.send(embed)
                     });
                 });
         } catch (err) {
             cryptoChannel.send('Invalid Currency!').then(msg => { msg.delete(5000) });
             console.log(err);
         }
-    }, 60 * 1000);
+    }, 5000);
 };
 
 

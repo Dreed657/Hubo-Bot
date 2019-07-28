@@ -4,7 +4,7 @@
   "description": "aaaaaa",
   "main": "index.js",
   "scripts": {
-    "start": "node bot.js",
+    "start": "supervisor bot.js",
     "dev": "nodemon bot.js",
     "powerdev": "supervisor bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +20,7 @@
     "discord.js": "^11.5.1",
     "dotenv-flow": "^3.0.0",
     "enmap": "^5.0.1",
+    "ffmpeg": "0.0.4",
     "fs": "0.0.1-security",
     "node-fetch": "^2.6.0",
     "nodemon": "^1.19.1",

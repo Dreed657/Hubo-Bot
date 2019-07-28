@@ -1,7 +1,8 @@
 const { Client } = require('discord.js');
 const fs = require('fs');
 const Enmap = require('enmap');
-const ffmpeg = require('ffmpeg');
+
+require('ffmpeg');
 require('dotenv-flow').config();
 
 const client = new Client();

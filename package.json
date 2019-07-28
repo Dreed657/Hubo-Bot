@@ -4,7 +4,7 @@
   "description": "aaaaaa",
   "main": "index.js",
   "scripts": {
-    "start": "node start.js",
+    "start": "node bot.js",
     "dev": "nodemon bot.js",
     "powerdev": "supervisor bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,7 +25,6 @@
     "fs": "0.0.1-security",
     "node-fetch": "^2.6.0",
     "nodemon": "^1.19.1",
-    "opusscript": "0.0.6",
     "ytdl": "^0.12.0",
     "ytdl-core": "^0.29.3"
   },

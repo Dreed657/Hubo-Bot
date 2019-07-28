@@ -1,11 +1,9 @@
-const fs = require('fs');
 const ytdl = require('ytdl-core');
 
 exports.run = (client, message, args) => {
     message.delete();
 
-    const botChannel = client.channels.get('603003319816028162');
-    
+    var VC = message.member.voiceChannel;
     if (!VC)
         return message.reply("MESSAGE IF NOT IN A VOICE CHANNEL")
     VC.join()
@@ -19,24 +17,8 @@ exports.run = (client, message, args) => {
             } catch (err) {
                 console.log(err)
             }
-
-
-           
         })
         .catch(console.error);
-
-
-
-
-    // if(message.member.voiceChannel) {
-    //     try {
-    //         message.member.voiceChannel.join();
-    //     } catch (err) {
-    //         botChannel.send('Something went south.');
-    //         console.log(err)
-    //     }
-    // }
-       
     };
 
 exports.help = {

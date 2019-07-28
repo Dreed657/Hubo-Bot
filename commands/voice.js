@@ -13,7 +13,7 @@ exports.run = (client, message, args) => {
     VC.join()
         .then(connection => {
             try {
-                const ulr = 'https://www.youtube.com/watch?v=o7cbzo-ld1I&list=PL0EXOCxtOjwFoDtPeA58w9qirxWIX_BCb&index=6&t=0s';
+                const url = args[0];
                 // ytdl('https://www.youtube.com/watch?v=o7cbzo-ld1I&list=PL0EXOCxtOjwFoDtPeA58w9qirxWIX_BCb&index=6&t=0s', { filter: 'audioonly' })
                 //     .pipe(fs.createWriteStream('video.mp3'));
                 
@@ -23,7 +23,7 @@ exports.run = (client, message, args) => {
 
                 dispatcher.on('end', () => voiceChannel.leave());
             } catch (err) {
-                console.log('hmm')
+                console.log(err)
             }
 
 

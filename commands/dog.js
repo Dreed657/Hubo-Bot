@@ -7,7 +7,6 @@ exports.run = async (client, message, args) => {
         .then(res => res.json())
         .then(json => json.message);
 
-    // anthony#8577
     let embed = new RichEmbed()
         .setAuthor(message.member.user.tag, message.member.user.avatarURL)
         .setColor(0xdd2423)
@@ -16,7 +15,7 @@ exports.run = async (client, message, args) => {
         .setFooter(`A random doggo!!`)
         .setTimestamp();
 
-    message.channel.send(embed);
+    message.channel.send(embed).then(msg => { msg.delete(2500) });
 
 };
 

@@ -3,7 +3,6 @@ const fs = require('fs');
 const Enmap = require('enmap');
 require('dotenv-flow').config();
 
-
 const client = new Client();
 
 client.commands = new Enmap();
